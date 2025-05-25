@@ -53,9 +53,11 @@ def tips_connexion():
 #         }
 #     }
 # }
+if 'name' not in st.session_state:
+	st.session_state.name = None
 
-# if st.session_state['name'] == None:
-if st.session_state["authentication_status"] is None:
+if st.session_state['name'] == None:
+# if st.session_state["authentication_status"] is None:
     tips_connexion()
 
 authenticator = Authenticate(
