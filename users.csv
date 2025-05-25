@@ -1,0 +1,10 @@
+name,password,email,failed_login_attemps,logged_in,role
+admin,adminMDP,admin@email.com,0,false,admin
+nameA,nameAMDP,nameA@email.com,0,false,user
+nameB,nameBMDP,nameB@email.com,0,false,user
+nameC,nameCMDP,nameC@email.com,0,false,user
+nameD,nameDMDP,nameD@email.com,0,false,user
+nameE,nameEMDP,nameE@email.com,0,false,user
+nameF,nameFMDP,nameF@email.com,0,false,user
+nameG,nameGMDP,nameG@email.com,0,false,user
+nameH,nameHMDP,nameH@email.com,0,false,user
