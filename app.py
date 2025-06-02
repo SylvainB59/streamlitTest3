@@ -31,33 +31,10 @@ def tips_connexion():
             st.dataframe(user_ex)
 
 
-# data['usernames'] = users.to_dict(orient='index')
-# Nos données utilisateurs doivent respecter ce format
-# lesDonneesDesComptes = {
-#     'usernames': {
-#         'utilisateur': {
-#             'name': 'utilisateur',
-#             'password': 'utilisateurMDP',
-#             'email': 'utilisateur@gmail.com',
-#             'failed_login_attemps': 0,  # Sera géré automatiquement
-#             'logged_in': False,          # Sera géré automatiquement
-#             'role': 'utilisateur'
-#         },
-#         'root': {
-#             'name': 'root',
-#             'password': 'rootMDP',
-#             'email': 'admin@gmail.com',
-#             'failed_login_attemps': 0,  # Sera géré automatiquement
-#             'logged_in': False,          # Sera géré automatiquement
-#             'role': 'administrateur'
-#         }
-#     }
-# }
 if 'name' not in st.session_state:
 	st.session_state.name = None
 
 if st.session_state['name'] == None:
-# if st.session_state["authentication_status"] is None:
     tips_connexion()
 
 authenticator = Authenticate(
@@ -73,7 +50,7 @@ authenticator.login()
 
 
 def accueil():
-    st.title("Bienvenu sur sur ta page d'accueil")
+    st.title("Bienvenu sur ta page d'accueil")
 
 def photos():
     st.title('Bienvenu dans ton album photo')
